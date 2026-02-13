@@ -17,6 +17,8 @@
 
     <modules>
         <module>NacosConfig</module>
+        <module>NacosProvider</module>
+        <module>NacosConsumer</module>
     </modules>
 
     <dependencyManagement>

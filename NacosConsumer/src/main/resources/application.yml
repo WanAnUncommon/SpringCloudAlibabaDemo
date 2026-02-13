@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: NacosConsumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+    loadbalancer:
+      nacos:
+        enabled: true
+server:
+  port: 18086
