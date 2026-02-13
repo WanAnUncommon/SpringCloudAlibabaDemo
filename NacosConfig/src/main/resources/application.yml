@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: NacosConfig
+  cloud:
+    nacos:
+      serverAddr: 127.0.0.1:8848
+      username: nacos
+      password: nacos
+  config:
+    import:
+      - nacos:nacos-config-example.properties?refreshEnabled=true
+server:
+  port: 18084
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
