@@ -1,0 +1,48 @@
+server:
+  port: 18091
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: 'nacos'
+        password: 'nacos'
+    loadbalancer:
+      ribbon:
+        enabled:true
+  application:
+    name: business-service
+
+seata:
+  enabled: true
+  application-id: ${spring.application.name}
+
+  tx-service-group: ${spring.application.name}-tx-group
+  config:
+    type: nacos
+    nacos:
+      dataId: "seata.properties"
+      username: 'nacos'
+      password: 'nacos'
+      server-addr: 127.0.0.1:8848
+      group: SEATA_GROUP
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: 127.0.0.1:8848
+      username: 'nacos'
+      password: 'nacos'
+      group: SEATA_GROUP
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
+logging:
+  level:
+    io:
+      seata: debug

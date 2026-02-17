@@ -19,6 +19,10 @@
         <module>NacosConfig</module>
         <module>NacosProvider</module>
         <module>NacosConsumer</module>
+        <module>SeataStorage</module>
+        <module>SeataOrder</module>
+        <module>SeataBusiness</module>
+        <module>SeataAccount</module>
     </modules>
 
     <dependencyManagement>
