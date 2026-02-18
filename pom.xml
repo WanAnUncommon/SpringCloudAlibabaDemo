@@ -23,6 +23,7 @@
         <module>SeataOrder</module>
         <module>SeataBusiness</module>
         <module>SeataAccount</module>
+        <module>SentinelDemo</module>
     </modules>
 
     <dependencyManagement>
