@@ -12,7 +12,7 @@
         <spring-boot.version>3.0.2</spring-boot.version>
         <spring-cloud-alibaba.version>2022.0.0.0</spring-cloud-alibaba.version>
         <spring-cloud.version>2022.0.0</spring-cloud.version>
-        <java.version>17</java.version>
+        <java.version>20</java.version>
     </properties>
 
     <modules>
@@ -24,6 +24,9 @@
         <module>SeataBusiness</module>
         <module>SeataAccount</module>
         <module>SentinelDemo</module>
+        <module>RocketMQProducer</module>
+        <module>RocketMQConsumer1</module>
+        <module>RocketMQConsumer2</module>
     </modules>
 
     <dependencyManagement>
